@@ -2,12 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import StoreProvider from './store';
-import { initialState } from './store/initialState';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <StoreProvider value={initialState} >
+    <StoreProvider>
       <App />
     </StoreProvider>
   </React.StrictMode>
